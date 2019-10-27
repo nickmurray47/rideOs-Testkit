@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <!-- Headline -->
+          <h1>TestKit - RideHailing in Chicago
+            <span class="divider">|</span>
+            <span class="sub-headline">
+              <span id="station-count"></span> Stations
+            </span>
+          </h1>
+
+          <!-- Visualization placeholders -->
+          <button id="changeColor"></button>
+          <div id="routeChart"></div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
+
+    <!-- Visualization objects -->
+    <script src="js/rideMap.js"></script>
+    <!-- Load data, create visualizations -->
+    <script src="js/rideOs_content_script.js"></script>
+  </body>
+</html>
